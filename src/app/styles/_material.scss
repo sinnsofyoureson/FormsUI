@@ -1,23 +1,4 @@
-/*!
- * Bootstrap v4.0.0 (https://getbootstrap.com)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-// Override Variables
-
-// Modules
-
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/root';
-@import '~bootstrap/scss/reboot';
-@import '~bootstrap/scss/grid';
-
-
-@import '~@angular/material/theming';
+@import '~@angular/materials/theming';
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -40,24 +21,3 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($candy-app-theme);
-
-.tech {
-  position: fixed;
-  margin: 13px;
-  padding: 8px;
-  display: flex;
-  bottom: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-
-  p {
-    margin-right: 13px;
-    margin-bottom: 0;
-  }
-
-  img {
-    height: 32px;
-    width: 32px;
-  }
-}
